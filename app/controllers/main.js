@@ -1,6 +1,10 @@
 $(document).ready(function () {
     dsnd = new DanhSachNguoiDung;
 
+    function themNguoiDung() {
+        console.log("them nguoi dung 2222222");
+    }
+
     getListUser();
 
     function getListUser(){

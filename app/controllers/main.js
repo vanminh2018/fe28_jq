@@ -91,8 +91,7 @@ $(document).ready(function () {
             $("#MatKhau").val(result.hoTen);
             $("#Email").val(result.email);
             $("#SoDienThoai").val(result.soDT);
-            //$("#loaiNguoiDung").val(result.maNguoiDung);
-            //$("#loaiNguoiDung option[value=id]").attr('selected', 'selected'); ????????????????
+            $(`#loaiNguoiDung option[value=${result.maLoaiNguoiDung}]`).attr('selected', true);
         }).fail(function (error) {
             console.log(error);
         });
